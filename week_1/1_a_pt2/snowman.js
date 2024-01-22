@@ -5,10 +5,10 @@ let stroke3 = prompt("enter another basic color lowercase", "red")
 function setup() {
     createCanvas(1000, 800);
     background("#067BFF");
-    grid = loadImage("images/100px_grid.png");
+    //grid = loadImage("images/100px_grid.png");
 }
 function draw () {
-    background(grid);
+    //background(grid);
     //house
     square(700, 500, 200);
     square(800, 650, 50);
