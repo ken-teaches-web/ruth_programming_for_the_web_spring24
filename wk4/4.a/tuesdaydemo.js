@@ -16,12 +16,12 @@ myButton.addEventListener('click', clickHandler); */
 
 // P5.js stuff
 // mouse pressed  function
-//const circleDiameter = 100;
+const circleDiameter = 100;
 // let circleX = 200;
 // let circleY = 300;
 let startingX = 200;
 let startingY = 100;
-//let myCircles = [];
+let myCircles = [];
 let startingId = 0;
 function setup () {
     createCanvas(1000, 500);
