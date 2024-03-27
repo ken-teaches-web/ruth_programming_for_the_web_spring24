@@ -45,6 +45,28 @@ function setup() {
     }
 }
 
+function draw ()
+    background(0); {
+    if (gameState.numMatched === gameState.totalPairs) {
+        fill('yellow');
+        textsize(66);
+        text('you win!!!!!', 400, 425);
+        noLoop();
+    }
+    for (let k = 0; k < cards.length; k++) {
+        if(!card[k].isMatch) {
+            cards[k].face = DOWN;
+        }
+        card[k].show();
+    }
+    noLoop();
+    gameState.flippedCards.length = 0;
+    gameState.waiting = false;
+    fill(255);
+    textSize(36);
+    text('attempts' + gameState.attempts, 100, 500);
+    text('matches' + gameState.numMatched, 100, 450);
+}
 
 function mousePressed() {
     if (gameState.waiting) {
