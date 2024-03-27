@@ -1,0 +1,12 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(Minecraft.ttf);
+}
+
+h1 {
+    font-family: pixelFont;
+    color: green;
+}
+img {
+    max-height: 200 px;
+}
