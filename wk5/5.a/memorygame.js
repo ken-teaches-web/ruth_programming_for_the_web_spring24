@@ -113,8 +113,8 @@ class Card {
     constructor (x, y, cardFaceImg) {
         this.x = x;
         this.y = y;
-        this.width = 80;
-        this.height = 100;
+        this.width = 70;
+        this.height = 110;
         this.face = DOWN;
         this.cardFaceImg = cardFaceImg;
         this.isMatch = false;
@@ -125,13 +125,13 @@ class Card {
         if(this.face === UP || this.isMatch) {
             fill('#aaa');
             rect(this.x, this.y, this.width, this.height, 10);
-            image(this.cardFaceImg, this.x + 4, this.y + 15);
+            image(this.cardFaceImg, this.x + 5, this.y + 5);
            
 
         } else {
             fill('rgb(57.7%, 9.9%, 9.9%)');
             rect(this.x, this.y, this.width, this.height, 10);
-            image(cardback, this.x + 10, this.y + 20);
+            image(cardback, this.x + 5, this.y + 5);
             
         }
     }
