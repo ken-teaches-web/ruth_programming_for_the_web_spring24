@@ -1,6 +1,6 @@
 import "./camelids.css"
 
-function Camelid({name, img, desc}) {
+export function Camelid({name, img, desc}) {
     console.log(name)
 
     return(

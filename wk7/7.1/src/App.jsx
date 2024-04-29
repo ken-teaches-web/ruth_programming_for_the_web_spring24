@@ -1,4 +1,4 @@
-import "./assets/components/camelids"
+import Camelid from "./assets/components/camelids"
 import imgLlama from "./assets/img/llama.jpg"
 import imgAlpaca from "./assets/img/alpaca.jpg"
 
