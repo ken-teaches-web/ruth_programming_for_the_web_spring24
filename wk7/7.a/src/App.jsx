@@ -10,7 +10,8 @@ function App() {
             description: "We may never know what Slowpoke is thinking—or if it's even thinking at all—but its willingness to happily laze the day away is worthy of admiration. With this jumbo Slowpoke plush by your side at home, school, or work, you'll always have a reminder of the importance of taking it a little slow from time to time.",
             price: "$450.00",
             availablePokemoncenter: "Yes",
-            image: "/slowpoke.jpg"
+            image: "./slowpoke.jpg",
+            available: true,
         },
         {
             pokemon: "Spheal",
@@ -18,7 +19,8 @@ function App() {
             description: "In the Pokémon world, Spheal stands around 2 feet and 7 inches tall. This jumbo Spheal plush isn't much different at 31 ½ inches tall and 39 ½ inches long. It's ready to be hugged, squeezed, and displayed in your bedroom or living room. With a face like this, you won't be able to avoid the cuteness of this round and rotund Pokémon!",
             price: "$449.99",
             availablePokemoncenter: "Yes",
-            image: "/spheal.jpg"
+            image: "./spheal.jpg",
+            available: true,
         },
         {
             pokemon: "Mareep",
@@ -26,7 +28,8 @@ function App() {
             description: "Just as big as it says in the Pokédex! This jumbo-size Poké Plush is a full 2 feet tall and more than 3 feet long, and it really gives you options! Will you count Mareep in the bedroom? Maybe put it under a glass tabletop? Possibly keep it near a rocking chair to maximize fluffy enjoyment during quiet times?",
             price: "$499.99",
             availablePokemoncenter: "NO",
-            image: "/mareep.jpg"
+            image: "./mareep.jpg",
+            available: false,
         },
         {
             pokemon: "Altaria",
@@ -34,13 +37,14 @@ function App() {
             description: "A beautiful and majestic Dragon- and Flying-type Pokémon, Altaria brings a calming presence wherever it goes. Now you can bring the magic and tranquility of Altaria into your own home or office with this jumbo plush that brings the Humming Pokémon to life with soft, supercuddly wings that look like comfy pillows!",
             price: "$499.99",
             availablePokemoncenter: "NO",
-            image: "/altaria.jpg"
+            image: "./altaria.jpg",
+            available: false,
         }
     ]
     return (
         <>
-        <h1>Jumbo Pokemon Plushes for Future Collection</h1>
-        <p>Show info here</p>
+        <h1><img src="./masterball.png" alt="master pokeball"/>Jumbo Pokemon Plushes for Future Collection<img src="./masterball.png" alt="master pokeball"/></h1>
+        <p><img src="./masterball.png" alt="master pokeball"/>These are some jumbo pokemon plushes I would love to have one day in the future if money and my hubby would allow it..but ya gotta catch them all.<img src="./masterball.png" alt="master pokeball"/></p>
         <table className="pokemon-table">
             <thead>
                 <tr>
@@ -64,6 +68,7 @@ function App() {
                         price={pokemon.price}
                         availablePokemoncenter={pokemon.availablePokemoncenter}
                         image={pokemon.image}
+                        available={pokemon.available}
                         />
                     )
             })}

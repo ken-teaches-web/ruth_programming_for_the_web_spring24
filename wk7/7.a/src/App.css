@@ -5,6 +5,8 @@
 }
 .pokemon-table thead, .commander-table tr {
     border: 1px solid black;
+    background-color: rgb(42, 45, 197);
+    color: aliceblue;
 }
 .pokemon-table td, .commander-table th {
     border: 1px solid black;
@@ -13,4 +15,26 @@
 }
 .pokemon-table img {
     width: 200px;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(42, 45, 197);
+    color: aliceblue;
+    padding: 50px;
+}
+
+p {
+    color: rgb(42, 45, 197);
+    text-align: center;
+    padding: 50px;
+}
+
+body {
+    background-color: rgb(223, 223, 255);
+}
+
+img {
+    max-width: 50px;
+    align-items: center;
 }
