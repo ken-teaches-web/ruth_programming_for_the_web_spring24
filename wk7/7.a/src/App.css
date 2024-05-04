@@ -1,0 +1,16 @@
+.pokemon-table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.pokemon-table thead, .commander-table tr {
+    border: 1px solid black;
+}
+.pokemon-table td, .commander-table th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 30px;
+}
+.pokemon-table img {
+    width: 200px;
+}
