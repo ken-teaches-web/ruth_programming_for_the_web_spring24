@@ -1,0 +1,33 @@
+body {
+    font-family: "Rosalia", serif;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.fade {
+    animation: fadeIn 5s;
+}
+
+.fade-body {
+    animation: fadeIn 8s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+button {
+    padding: 10px;
+    font-family: "Rosalia", serif;
+    animation: fadeIn 2s;
+  }
+
+  div {
+    animation: fadeIn 2s;
+  }
+
+  li {
+    padding: 20px;
+  }
+  
